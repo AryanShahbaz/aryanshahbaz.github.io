@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link href="./login.css" rel="stylesheet">
+       <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans" />
+       <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous" />
+       <title>Login</title>
+</head>
+<body>
+       <section id="main-box">
+              <div id="title">
+                     <i id="icon-box" class="fas fa-key"></i>
+                     <p id="title-box">Login</p>
+              </div>
+              <hr>
+              <br>
+              <input type="text"  placeholder="Username" id="username">
+              <br>
+              <br>
+              <input type="password" placeholder="Password"  id="password">
+              <br>
+              <br>
+              <div id="show-pass-box">
+                     <input type="checkbox" onclick="password_visibility()" id="show-pass">
+                     <p id="show-pass-text">Show password</p>
+              </div>
+              <br>
+              <br>
+              <input type="submit" onclick="check_pass()" id="submit">
+              <br>
+              <br>
+       </section>
+       <script>
+              function password_visibility() {
+                var x = document.getElementById("password");
+                if (x.type === "password") {
+                  x.type = "text";
+                } else {
+                  x.type = "password";
+                }
+              }
+              function check_pass() {
+                     console.log("check pass run");
+                     var username=document.getElementById("username").value;
+                     var password=document.getElementById("password").value;
+                     console.log(username);
+                     console.log(password);
+                     if(username == "aryanadmin" && password == "09022860926"){
+                            console.log("Correct");
+                            alert("Correct\nAdmin page is creating.`  ")
+                     }
+              }
+       </script>
+</body>
+</html>
