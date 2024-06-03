@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Upload</title>
+       <link rel="stylesheet" href="./upload.css">
+       <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans" />
+       <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous" />
+</head>
+<body>
+       <section id="main-box">
+              <div id="title">
+                     <i id="icon-box" class="fas fa-upload"></i>
+                     <p id="title-box">Upload</p>
+              </div>
+              <hr>
+              <br>
+              <form action="./upload.php" method="post" enctype="multipart/form-data" id="id-form">
+                     Select file to upload:
+
+                     <input type="file" name="fileToUpload" id="fileToUpload">
+                     <br>
+                     <br>
+                     <input type="submit" value="Upload" name="submit" id="submit-btn">
+              </form>
+       </section>
+</body>
+</html>
