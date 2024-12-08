@@ -2,21 +2,25 @@
 let getAbout = document.getElementById("getAbout");
 let getResume = document.getElementById("getResume");
 let getContact = document.getElementById("getContact");
+// let getCertificate = document.getElementById("getCertificate");
 
 // Sections
 let about = document.getElementById("about");
 let resume = document.getElementById("resume");
 let contact = document.getElementById("contact");
+// let certificate = document.getElementById("certificate");
 
 function removeClass() {
     // Links
     getAbout.classList.remove('selected');
     getResume.classList.remove('selected');
     getContact.classList.remove('selected');
+    // getCertificate.classList.remove('selected');
     // Sections
     about.classList.remove('view');
     resume.classList.remove('view');
     contact.classList.remove('view');
+    // certificate.classList.remove('view');
 }
 
 getAbout.addEventListener('click', function (e) {
@@ -44,3 +48,11 @@ getContact.addEventListener('click', function (e) {
         getContact.classList.add('selected');
     }
 })
+// getCertificate.addEventListener('click', function (e) {
+//     if (window.innerWidth > 1040) {
+//         e.preventDefault();
+//         removeClass();
+//         certificate.classList.add('view');
+//         getCertificate.classList.add('selected');
+//     }
+// })

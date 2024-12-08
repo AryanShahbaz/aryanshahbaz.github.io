@@ -633,3 +633,16 @@ main .contact{
     font-size:14px;
     color:#2eca7f;
 }
+.certificate-img{
+    width:80%;
+    margin-left: 8%;
+    text-align: center;
+    border-radius: 15px;
+    border:#2eca7f solid 2px;
+}
+
+.certificate-text{
+    font-size: 22px;
+    font-weight: bold;
+    color:#171717
+}
