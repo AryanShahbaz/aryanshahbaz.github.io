@@ -643,6 +643,13 @@ main .contact{
 
 .certificate-text{
     font-size: 22px;
+    font-family: 'Poppins';
     font-weight: bold;
     color:#171717
 }
+.certificate-detail{
+    font-size: 16px;
+    font-family: 'Poppins';
+    color:#626262;
+}
+
